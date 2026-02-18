@@ -4,3 +4,7 @@ exo2
 exo3
 exo4-debug
 exo4-optimized
+.metadata
+.idea
+.gdb_history
+.settings

@@ -13,7 +13,8 @@
 #include "tests.h"
 
 uint32_t inverse(uint32_t v){
-    return 0;
+	// inverse bits with XOR (0^1=1 / 1^1=0)
+    return v ^ 0xFFFFFF;
 }
 
 

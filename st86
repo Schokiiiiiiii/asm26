@@ -1,0 +1,10 @@
+#!/bin/bash
+qemu/i386-softmmu/qemu-system-i386 $1 -s \
+	-M pc -cpu Haswell -bios qemu/coreboot.rom \
+	-serial mon:stdio  \
+	-m 256 \
+        -netdev user,id=n0,tftp=. \
+	-device e1000e,netdev=n0,mac=00:01:29:53:97:BA \
+	-nographic 
+        
+  

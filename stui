@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function qemu {
+	echo Running QEMU
+	qemu-arm/arm-softmmu/qemu-system-arm -s $1 -localtime -m 512M -M reptar -kernel u-boot-arm/u-boot  -serial mon:stdio  -tftp . -nographic -k qemu-arm/en_us
+}
+
+# qtemu send a SIGUSR1 signal when the tcp server is started
+# so wait for this signal before starting qemu
+
+trap qemu SIGUSR1
+qtemu/qtemu $$ &
+wait

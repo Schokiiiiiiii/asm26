@@ -1,0 +1,4 @@
+CFLAGS =
+CC=
+AR=
+LD=

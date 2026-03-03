@@ -1,0 +1,27 @@
+CC=arm-linux-gnueabihf-gcc
+LD=arm-linux-gnueabihf-ld
+AR=arm-linux-gnueabihf-ar
+OBJCOPY=arm-linux-gnuneabihf-objcopy
+
+
+CFLAGS=-marm -g
+
+all: checklib podometer
+
+checklib: libdriver.a
+
+podometer: podometer.o transfer.o system.o crt0.o
+	$(LD) $^ -L. -ldriver -o $@ -T asm.lds
+	$(OBJCOPY) -O binary $@ $@.bin 2>/dev/null 
+	
+libdriver.a: imu.o gpio.o uart.o led.o
+	$(AR) r $@ $^
+
+podometer.o: transfer.h led.h imu.h system.h
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -I. $<
+	
+%.o: %.S
+	$(CC) $(CFLAGS) -c -I. $<
+	

@@ -1,0 +1,23 @@
+CC=arm-linux-gnueabihf-gcc
+LD=arm-linux-gnueabihf-ld
+AR=arm-linux-gnueabihf-ar
+
+
+all: checklib podometer
+
+checklib: libdriver.a
+
+podometer: podometer.o transfer.o system.o crt0.o
+	$(LD) $^ -L. -ldriver -o $@ -T asm.lds
+	
+libdriver.a: imu.o gpio.o uart.o led.o
+	$(AR) r $@ $^
+
+podometer.o: transfer.h led.h imu.h system.h
+
+%.o: %.c
+	$(CC) -c -I. $<
+	
+%.o: %.S
+	$(CC) -c -I. $<
+	

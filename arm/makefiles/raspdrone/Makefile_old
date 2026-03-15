@@ -1,0 +1,51 @@
+CFLAGS=-Wall -Iinclude # compilator flags
+ARFLAGS=rcs # archiver flags
+LDFLAGS=-lc -dynamic-linker /lib64/ld-linux-x86-64.so.2 # linker flags
+CC=gcc # compilateur
+AR=ar # archiver
+LD=ld # linker
+
+APP = raspdrone
+LIB = libdrone.a
+
+APP_PATH = .build/$(APP)
+LIB_PATH = .build/$(LIB)
+
+LIB_SRC = src/motor.c src/gyroscope.c src/camera.c
+LIB_OBJ = $(LIB_SRC:src/%.c=.build/%.o)
+APP_SRC = src/engine.c src/autopilot.c src/navigation.c src/pwm_drone.c
+APP_OBJ = $(APP_SRC:src/%.c=.build/%.o)
+
+# Create app
+.PHONY: all
+all: $(APP)
+
+# .build/ directory
+.build:
+	mkdir -p .build
+
+# Build for each source file
+.PHONY: object
+object: .build/%.o
+.build/%.o: src/%.c | .build # percent left and right are the same
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Create libdrone library
+.PHONY: $(LIB)
+$(LIB): $(LIB_PATH)
+$(LIB_PATH): $(LIB_OBJ)
+	$(AR) $(ARFLAGS) $@ $^
+	@echo "Libdrone is ready"
+
+# Create raspdrone app
+.PHONY: $(APP)
+$(APP): $(APP_PATH)
+$(APP_PATH): $(APP_OBJ) | $(LIB)
+	$(LD) $(LDFLAGS) /lib/x86_64-linux-gnu/crt*.o $(APP_OBJ) $(LIB_PATH) -o $@
+	@echo "App is ready"
+
+# Delete .build/ folder
+.PHONY: clean
+clean:
+	rm -rf .build/
+	@echo "Deleted .build/ folder successfully"

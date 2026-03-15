@@ -1,5 +1,6 @@
 #!/bin/bash
 qemu/i386-softmmu/qemu-system-i386 $1 -s \
+	-L /usr/share/qemu \
 	-M pc -cpu Haswell -bios qemu/coreboot.rom \
 	-serial mon:stdio  \
 	-m 256 \

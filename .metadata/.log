@@ -1,0 +1,445 @@
+!SESSION 2020-09-03 12:14:49.603 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-03 12:15:22.899
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-03 13:35:30.589 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-03 13:35:57.037
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-09-03 13:50:08.109
+!MESSAGE Error with command: i686-pc-linux-gdb --version
+!STACK 0
+java.io.IOException: Cannot run program "i686-pc-linux-gdb": Unknown reason
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:73)
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:320)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:511)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:147)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-03 14:37:49.251 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-03 14:37:59.721
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2020-09-04 07:47:13.628
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+-target-select remote localhost:1234
+Error message from debugger back end:
+localhost:1234: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+-target-select remote localhost:1234
+Error message from debugger back end:
+localhost:1234: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:242)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:1234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2020-09-04 07:47:13.631
+!MESSAGE Failed to execute MI command:
+-target-select remote localhost:1234
+Error message from debugger back end:
+localhost:1234: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:1234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+!SESSION 2020-09-07 11:19:35.064 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-07 11:19:50.658
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-11 08:24:02.933 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-11 08:24:19.808
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-15 13:39:12.867 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-15 13:39:31.380
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-09-15 15:56:41.070
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/reds/asm/asm20_student/arm/hello_world not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-09-15 15:56:41.070
+!MESSAGE /home/reds/asm/asm20_student/arm/hello_world not found
+!STACK 0
+java.io.FileNotFoundException: /home/reds/asm/asm20_student/arm/hello_world not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:131)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:315)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:142)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:106)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:94)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:718)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-16 11:53:38.005 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-16 11:53:56.720
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-22 14:07:02.170 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-22 14:07:39.321
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-24 08:21:05.466 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-24 08:21:23.488
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-09-24 14:35:21.860 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-24 14:35:33.235
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2020-09-24 14:35:34.791
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.linuxtools.internal.docker.ui.preferences.PreferenceInitializer.initializeDefaultPreferences(PreferenceInitializer.java:36)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:307)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:310)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:134)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:374)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:225)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:279)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:370)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:624)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.node(EclipsePreferences.java:767)
+	at org.eclipse.core.internal.preferences.PreferencesService$5.run(PreferencesService.java:620)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.PreferencesService.getNodes(PreferencesService.java:600)
+	at org.eclipse.core.internal.preferences.PreferencesService.getLong(PreferencesService.java:571)
+	at org.eclipse.linuxtools.internal.docker.core.DockerContainerRefreshManager.listChanged(DockerContainerRefreshManager.java:61)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.notifyContainerListeners(DockerConnection.java:602)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.setState(DockerConnection.java:340)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.ping(DockerConnection.java:392)
+	at org.eclipse.linuxtools.internal.docker.core.DockerConnection.open(DockerConnection.java:293)
+	at org.eclipse.linuxtools.internal.docker.core.DefaultTCPConnectionSettingsProvider.getConnectionSettings(DefaultTCPConnectionSettingsProvider.java:32)
+	at org.eclipse.linuxtools.internal.docker.core.DefaultDockerConnectionSettingsFinder.getKnownConnectionSettings(DefaultDockerConnectionSettingsFinder.java:210)
+	at org.eclipse.linuxtools.docker.core.DockerConnectionManager.lambda$0(DockerConnectionManager.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.core.jobs 4 0 2020-09-24 14:35:34.808
+!MESSAGE Detecting and checking for valid Container Launch Targets
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2020-09-24 14:35:34.808
+!MESSAGE An internal error occurred during: "Check configs".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.core.CCorePlugin.getService(CCorePlugin.java:1646)
+	at org.eclipse.cdt.docker.launcher.ContainerTargetTypeProvider$1.run(ContainerTargetTypeProvider.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2020-09-24 14:35:35.270
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.internal.qt.core.Activator$1
+!SESSION 2020-09-24 17:06:31.602 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-09-24 17:06:48.208
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-10-12 16:32:47.580 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.urischeme 4 0 2020-10-12 16:32:58.348
+!MESSAGE /home/reds/.local/share/applications/_opt_eclipse_.desktop
+!STACK 0
+java.nio.file.AccessDeniedException: /home/reds/.local/share/applications/_opt_eclipse_.desktop
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:219)
+	at java.base/java.nio.file.Files.write(Files.java:3424)
+	at org.eclipse.urischeme.internal.registration.FileProvider.write(FileProvider.java:39)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.changeDesktopFile(RegistrationLinux.java:100)
+	at org.eclipse.urischeme.internal.registration.RegistrationLinux.handleSchemes(RegistrationLinux.java:56)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-10-04 13:56:51.012 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.11
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-10-04 13:57:03.185
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2022-03-18 10:29:54.397 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.11
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-03-18 10:30:09.027
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2022-03-21 08:57:47.466 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.11
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-21 09:06:15.449
+!MESSAGE Indexed 'arm' (8 sources, 87 headers) in 2.11 sec: 4,187 declarations; 3,478 references; 11 unresolved inclusions; 230 syntax errors; 49 unresolved names (0.64%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-21 09:06:44.692
+!MESSAGE Indexed 'x86' (5 sources, 84 headers) in 0.718 sec: 4,169 declarations; 3,438 references; 10 unresolved inclusions; 59 syntax errors; 42 unresolved names (0.55%)

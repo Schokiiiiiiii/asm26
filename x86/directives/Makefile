@@ -4,7 +4,7 @@
 # application that runs on its own stack. 
 #
 
-TOOL_PREFIX	:= i686-linux
+TOOL_PREFIX	:= arm-linux-gnueabihf
 
 AR		= 	$(TOOL_PREFIX)-ar
 LD		= 	$(TOOL_PREFIX)-ld
@@ -14,11 +14,11 @@ OBJCOPY		= 	$(TOOL_PREFIX)-objcopy
 OBJDUMP		= 	$(TOOL_PREFIX)-objdump
 CPP		= 	$(CC) -E
 
-LOAD_ADDR 	= 0x40000
+LOAD_ADDR 	= 0x82000000
 
 #########################################################################
 
-CPPFLAGS= -ffunction-sections -fvisibility=hidden -fno-builtin -ffreestanding -nostdinc  -pipe  -fno-strict-aliasing -Wstrict-prototypes -ffreestanding -fno-toplevel-reorder -fno-stack-protector -mpreferred-stack-boundary=2 -fno-dwarf2-cfi-asm -DREALMODE_BASE=0x7c0 -DCONFIG_X86 -D__I386__ -march=i386 -Werror -Wall -Wstrict-prototypes -fno-stack-protector -Wno-format-nonliteral -Wno-format-security -fstack-usage -fno-toplevel-reorder 
+CPPFLAGS += -fno-common -ffixed-r8 -msoft-float -Wall -Wstrict-prototypes -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5
 
 OBJCFLAGS += --gap-fill=0xff
 

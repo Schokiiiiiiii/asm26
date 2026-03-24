@@ -31,6 +31,7 @@ void tests_frame(void) {
 	result = checksum_to_hex(hex);
 	printf("Test 5: %s\n", (result == 0x30783339) ? "PASSED" : "FAILED");
 	hex = (value << 8) | 0xAF;
+	result = checksum_to_hex(hex);
 	printf("print %x\n", result);
 	printf("Test 6: %s\n", (result == 0x30784146) ? "PASSED" : "FAILED");
 }

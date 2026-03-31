@@ -7,6 +7,26 @@
 @ Return the number of chars in the new string.
 @ The return value is stored in r0
 
+@ Include external files
+.include "string_asm.inc"
+
+@ Show upper case to main
+.global to_upper_case
+
+@ Get external symbols (functions...)
+.extern copy_string
+
+@ Constants
+.equiv MAX_STRING_SIZE, 30
+
+@ Variables
+.data
+tmp_string:
+    .space MAX_STRING_SIZE
+count:
+    .word 0
+
+.text
 to_upper_case:
     mov   r12, sp
     stmfd sp!, {r4-r12, lr}

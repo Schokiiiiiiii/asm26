@@ -18,7 +18,7 @@ LOAD_ADDR 	= 0x82000000
 
 #########################################################################
 
-CPPFLAGS += -fno-common -ffixed-r8 -msoft-float -Wall -Wstrict-prototypes -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5
+CPPFLAGS += -fno-common -ffixed-r8 -msoft-float -Wall -Wstrict-prototypes -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv4
 
 OBJCFLAGS += --gap-fill=0xff
 

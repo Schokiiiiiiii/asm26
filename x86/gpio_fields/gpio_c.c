@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <common.h>
 
 #define GPIO_MODE_MASK   (0x3u << 0)    // bits 1:0
 #define GPIO_SPEED_MASK  (0xFu << 2)    // bits 5:2

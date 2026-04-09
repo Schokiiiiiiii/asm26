@@ -43,5 +43,9 @@
 > Placer le code dans .text et les données dans .data.
 
 ```asm
+@ Variables
+.data
 
+@ Code
+.text
 ```

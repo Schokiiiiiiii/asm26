@@ -4,7 +4,7 @@
 # Toolchain #
 #############
 
-TOOL_PREFIX	:= arm-linux-gnueabihf
+TOOL_PREFIX	:= /opt/toolchains/arm-linux-gnueabihf_11.3.1/bin/arm-linux-gnueabihf
 
 AR      = $(TOOL_PREFIX)-ar
 LD      = $(TOOL_PREFIX)-ld

@@ -4,7 +4,7 @@
 # application that runs on its own stack.
 #
 
-TOOL_PREFIX	:= i686-linux
+TOOL_PREFIX := /opt/toolchains/i686-linux_6.4.0/bin/i686-linux
 
 AR		= 	$(TOOL_PREFIX)-ar
 LD		= 	$(TOOL_PREFIX)-ld
@@ -13,7 +13,7 @@ CC		= 	$(TOOL_PREFIX)-gcc
 OBJCOPY		= 	$(TOOL_PREFIX)-objcopy
 OBJDUMP		= 	$(TOOL_PREFIX)-objdump
 CPP		= 	$(CC) -E
-LIBGCC := $(shell i686-linux-gcc -print-libgcc-file-name)
+LIBGCC := $(shell $(CC) -print-libgcc-file-name)
 
 LOAD_ADDR 	= 0x40000
 

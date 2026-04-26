@@ -5,7 +5,8 @@
 uint32_t pop_count_c(const uint32_t value) {
     uint32_t result = 0;
 
-    // A vous de jouer !
+    for (int i = 0 ; i < 32 ; ++i)
+        result += (value >> i) & 0x1;
 
     return result;
 }
@@ -13,7 +14,13 @@ uint32_t pop_count_c(const uint32_t value) {
 uint32_t pop_count(const uint32_t value) {
     uint32_t result = 0;
 
-    // A vous de jouer !
+    __asm__("movl   %1, %%eax\n\t"
+            "popcnt %%eax, %%ecx\n\t"
+            "movl   %%ecx, %0\n\t"
+            : "+m" (result) // Outputs
+            : "g"  (value)  // Inputs
+            : "eax", "ecx"  // Clobbered regs
+    );
 
     return result;
 }

@@ -5,7 +5,13 @@
 
 @@@@@@@@@@@ A completer @@@@@@@@@@
 
-@ Macro pour asolute-difference
+@ Macro pour absolute-difference
+.macro absdiff res, reg1, reg2
+
+    subs  \res, \reg1, \reg2   @ res = reg1 - reg2
+    rsbmi \res, \res, #0       @ if negative, res = -res
+
+.endm
 
 @@@@@@@@@@@ ----------- @@@@@@@@@@
 
@@ -129,11 +135,8 @@ target_row_0:
 target_done:
 
         @@@@@@@@ COMPUTING DIFFERENCE @@@@@@@@
-        subs  r9, r5, r7   @ dx = x_current - x_target
-        rsbmi r9, r9, #0   @ if negative, dx = -dx
-
-        subs  r10, r6, r8  @ dy = y_current - y_target
-        rsbmi r10, r10, #0 @ if negative, dy = -dy
+        absdiff r9, r5, r7  @ compute |x - x'|
+        absdiff r10, r6, r8 @ compute |y - y'|
 
         add r1, r1, r9     @ add |x - x'|
         add r1, r1, r10    @ add |y - y'|

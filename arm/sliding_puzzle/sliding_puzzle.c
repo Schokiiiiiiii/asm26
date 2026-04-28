@@ -623,12 +623,6 @@ int main(int argc, char *argv[]) {
     // prompt_continue();
 
     // Solving the puzzle with student hamming distance
-    printf("Solving with Hamming distance ASM\n");
-    distance_function = hamming_distance_asm;
-    if (!dual_a_star_search((const uint8_t *) puzzle)) {
-        printf("[ASM] hamming_distance_asm() seems incorrect...\n");
-    }
-    prompt_continue();
     printf("Solving with Manhattan distance ASM\n");
     distance_function = manhattan_distance_asm;
     if (!dual_a_star_search((const uint8_t *) puzzle)) {

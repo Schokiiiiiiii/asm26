@@ -1,5 +1,6 @@
 #!/bin/bash
 qemu/arm-softmmu/qemu-system-arm $1 -s \
+  -L /usr/share/qemu \
 	-M vexpress-a15 -cpu cortex-a15\
 	-serial mon:stdio  \
 	-kernel u-boot/u-boot \

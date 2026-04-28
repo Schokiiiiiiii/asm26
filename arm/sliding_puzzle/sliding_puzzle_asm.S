@@ -182,6 +182,8 @@ end_loop_manhattan:
 
         mov r0, r1          @ mov sum to return register
 
+        @@@@@@@@@@@ ----------- @@@@@@@@@@
+
         ldmfd sp!, {r4-r12, lr}
         mov   sp, r12
         mov   pc, lr

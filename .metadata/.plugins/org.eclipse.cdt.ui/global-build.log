@@ -1,0 +1,26 @@
+15:00:09 **** Build of configuration Debug for project x86 ****
+make all 
+Building file: ../image_processing/asm_median_filter.S
+Invoking: GCC Assembler
+as  -o "image_processing/asm_median_filter.o" "../image_processing/asm_median_filter.S"
+../image_processing/asm_median_filter.S: Assembler messages:
+../image_processing/asm_median_filter.S:21: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:23: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:24: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:73: Error: invalid instruction suffix for `pop'
+../image_processing/asm_median_filter.S:74: Error: invalid instruction suffix for `pop'
+make: *** [image_processing/subdir.mk:28: image_processing/asm_median_filter.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:01:28 **** Incremental Build of configuration Debug for project x86 ****
+make all 
+Building file: ../image_processing/asm_median_filter.S
+Invoking: GCC Assembler
+as  -o "image_processing/asm_median_filter.o" "../image_processing/asm_median_filter.S"
+../image_processing/asm_median_filter.S: Assembler messages:
+../image_processing/asm_median_filter.S:21: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:23: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:24: Error: invalid instruction suffix for `push'
+../image_processing/asm_median_filter.S:73: Error: invalid instruction suffix for `pop'
+../image_processing/asm_median_filter.S:74: Error: invalid instruction suffix for `pop'
+make: *** [image_processing/subdir.mk:28: image_processing/asm_median_filter.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

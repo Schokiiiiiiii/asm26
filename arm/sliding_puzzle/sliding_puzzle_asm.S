@@ -21,7 +21,16 @@ swap_asm:
 
         @@@@@@@@@@@ A completer @@@@@@@@@@
 
-	@@@@@@@@@@@ ----------- @@@@@@@@@@
+        @ r0 = address of a
+        @ r1 = address of b
+
+        ldrb r2, [r0] @ r2 = *a
+        ldrb r3, [r1] @ r3 = *b
+
+        strb r3, [r0] @ *a = r3
+        strb r2, [r1] @ *b = r2
+
+        @@@@@@@@@@@ ----------- @@@@@@@@@@
 
         ldmfd sp!, {r4-r12, lr}
         mov   sp, r12

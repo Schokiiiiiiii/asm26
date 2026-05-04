@@ -8,6 +8,12 @@
 .globl asm_filter
 .type asm_filter, @function
 
+# Macro pour check border et jump
+.macro jmp_if_border cur, goal
+    cmpl \cur, \goal
+    je   copy_pixel
+.endm
+
 .text
         # Function arguments :
         # ebp + 8  : address of source image data (pointer to unsigned 8 bits)
@@ -41,6 +47,14 @@ check_if_on_border:
 
         # TODO : Check if the current pixel is on the border of the image
         # when on border jump to copy_pixel else continue
+        jmp_if_border x, $0
+        jmp_if_border y, $0
+        movl width, %eax
+        decl %eax
+        jmp_if_border x, eax
+        movl height, %eax
+        decl %eax
+        jmp_if_border y, eax
 
 laplace_filter:
 

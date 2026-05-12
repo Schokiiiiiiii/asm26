@@ -11,6 +11,6 @@ cd "${SCRIPTPATH}"
 # Then executes the .rendu.sh script, this allows the script
 # to be updated, check .rendu.sh to see what it does.
 git fetch &> /dev/null
-git checkout "origin/${LAB}" .rendu.sh &> /dev/null
+git checkout "upstream/${LAB}" .rendu.sh &> /dev/null
 # Launch .rendu.sh
 ./.rendu.sh

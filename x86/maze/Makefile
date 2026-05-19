@@ -4,7 +4,7 @@
 # application that runs on its own stack.
 #
 
-TOOL_PREFIX	:= i686-linux
+TOOL_PREFIX := /opt/toolchains/i686-linux_6.4.0/bin/i686-linux
 
 AR		= 	$(TOOL_PREFIX)-ar
 LD		= 	$(TOOL_PREFIX)-ld

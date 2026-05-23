@@ -1,0 +1,45 @@
+
+
+U-Boot 2019.10 (Sep 03 2020 - 14:24:13 +0200)
+
+DRAM:  1 GiB
+WARNING: Caches not enabled
+Flash: 0 Bytes
+MMC:   MMC: 0
+In:    serial
+Out:   serial
+Err:   serial
+Net:   smc911x-0
+=> x tftp arm/backtrace/backtrace.bin
+smc911x: MAC 00:01:29:53:97:ba
+smc911x: detected LAN9118 controller
+smc911x: phy initialized
+smc911x: MAC 00:01:29:53:97:ba
+Using smc911x-0 device
+TFTP from server 10.0.2.2; our IP address is 10.0.2.15
+Filename 'arm/backtrace/backtrace.bin'.
+Load address: 0x82000000
+Loading: *#
+	 74.2 KiB/s
+done
+Bytes transferred = 2224 (8b0 hex)
+smc911x: MAC 00:01:29:53:97:ba
+=> go 0x82000000
+## Starting application at 0x82000000 ...
+This program will jump randomly between functions A, B, C or D
+Please press a key to use as random seed value
+----
+Function main called
+Function function_D called
+
+Backtrace :
+----
+Previous link register : 0x820003e0
+Previous link register : 0x82000524
+Previous link register : 0x82000020
+----
+Hit any key to exit ... 
+
+## Application terminated, rc = 0x1
+=> QEMU: Terminated
+
